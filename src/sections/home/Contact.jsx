@@ -1,5 +1,5 @@
-import { styles } from "../../utils/styles.js";
-import { sectionImages } from "../../utils/constants.js";
+import { styles } from "../../utils/styles";
+import { sectionImages } from "../../utils/constants";
 
 const Contact = () => {
   return (

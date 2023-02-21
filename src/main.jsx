@@ -8,7 +8,7 @@ import "tw-elements";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>

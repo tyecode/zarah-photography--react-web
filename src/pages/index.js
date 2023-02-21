@@ -1,7 +1,7 @@
-import HomePage from "./HomePage.jsx";
-import AboutPage from "./AboutPage.jsx";
-import PortfolioPage from "./PortfolioPage.jsx";
-import BlogPage from "./BlogPage.jsx";
-import ContactPage from "./ContactPage.jsx";
+import HomePage from "./HomePage";
+import AboutPage from "./AboutPage";
+import PortfolioPage from "./PortfolioPage";
+import BlogPage from "./BlogPage";
+import ContactPage from "./ContactPage";
 
 export { HomePage, AboutPage, PortfolioPage, BlogPage, ContactPage };

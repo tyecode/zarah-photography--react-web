@@ -1,5 +1,5 @@
-import Navbar from "./Navbar.jsx";
-import Hero from "./Hero.jsx";
-import Footer from "./Footer.jsx";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import Footer from "./Footer";
 
 export { Navbar, Hero, Footer };

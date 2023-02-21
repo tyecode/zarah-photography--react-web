@@ -1,7 +1,7 @@
 import { FaFacebookF, FaInstagram, FaDribbble } from "react-icons/fa";
 
-import { styles } from "../../utils/styles.js";
-import { ourTeams } from "../../utils/constants.js";
+import { styles } from "../../utils/styles";
+import { ourTeams } from "../../utils/constants";
 
 const Team = () => {
   return (

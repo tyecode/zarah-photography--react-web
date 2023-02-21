@@ -1,4 +1,4 @@
-import { styles } from "../../utils/styles.js";
+import { styles } from "../../utils/styles";
 
 const Testimonials = () => {
   return (

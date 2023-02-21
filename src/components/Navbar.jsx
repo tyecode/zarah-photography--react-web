@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { Slant as Hamburger } from "hamburger-react";
 
-import { navLinks } from "../utils/constants.js";
-import { styles } from "../utils/styles.js";
+import { navLinks } from "../utils/constants";
+import { styles } from "../utils/styles";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);

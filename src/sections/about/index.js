@@ -1,3 +1,3 @@
-import History from "./History.jsx";
+import History from "./History";
 
 export { History };
