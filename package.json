@@ -1,9 +1,9 @@
 {
   "name": "zarah-photography",
-  "private": false,
+  "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://tyecode.github.io/zarah-photography--react-web",
+  "homepage": "/zarah-photography/#",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
