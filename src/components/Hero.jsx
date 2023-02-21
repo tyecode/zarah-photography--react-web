@@ -1,5 +1,5 @@
-import { styles } from "../utils/styles";
-import { slideImages } from "../utils/constants";
+import { styles } from "../utils/styles.js";
+import { slideImages } from "../utils/constants.js";
 
 const Hero = () => {
   return (

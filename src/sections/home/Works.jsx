@@ -1,5 +1,5 @@
-import { styles } from "../../utils/styles";
-import { sectionImages } from "../../utils/constants";
+import { styles } from "../../utils/styles.js";
+import { sectionImages } from "../../utils/constants.js";
 
 const Works = () => {
   return (
@@ -13,7 +13,9 @@ const Works = () => {
             draggable="false"
           />
         </div>
-        <div className={`${styles.paddingX} flex flex-col py-16 sm:w-1/2 justify-center md:p-16`}>
+        <div
+          className={`${styles.paddingX} flex flex-col py-16 sm:w-1/2 justify-center md:p-16`}
+        >
           <div className="w-full">
             <div className="flex items-center">
               <div className={styles.headingBar}></div>

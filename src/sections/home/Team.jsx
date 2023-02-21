@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaDribbble } from "react-icons/fa";
 
-import { styles } from "../../utils/styles";
-import { ourTeams } from "../../utils/constants";
+import { styles } from "../../utils/styles.js";
+import { ourTeams } from "../../utils/constants.js";
 
 const Team = () => {
   return (

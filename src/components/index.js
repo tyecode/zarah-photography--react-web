@@ -1,6 +1,5 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Testimonials from "../sections/home/Testimonials";
-import Footer from "./Footer";
+import Navbar from "./Navbar.jsx";
+import Hero from "./Hero.jsx";
+import Footer from "./Footer.jsx";
 
-export { Navbar, Hero, Testimonials, Footer };
+export { Navbar, Hero, Footer };

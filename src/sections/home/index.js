@@ -1,9 +1,9 @@
-import Services from "./Services";
-import Works from "./Works";
-import Testimonials from "./Testimonials";
-import Values from "./Values";
-import Features from "./Features";
-import Team from "./Team";
-import Contact from "./Contact";
+import Services from "./Services.jsx";
+import Works from "./Works.jsx";
+import Testimonials from "./Testimonials.jsx";
+import Values from "./Values.jsx";
+import Features from "./Features.jsx";
+import Team from "./Team.jsx";
+import Contact from "./Contact.jsx";
 
 export { Services, Works, Testimonials, Values, Features, Team, Contact };

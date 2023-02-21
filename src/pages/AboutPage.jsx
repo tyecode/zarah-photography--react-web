@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { styles } from "../utils/styles";
+import { styles } from "../utils/styles.js";
 import { History } from "../sections/about";
 
 const AboutPage = () => {

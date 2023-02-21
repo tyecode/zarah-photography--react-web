@@ -2,7 +2,7 @@ import { TfiCamera } from "react-icons/tfi";
 import { BiPhotoAlbum } from "react-icons/bi";
 import { MdOutlineCameraRoll, MdOutlineHomeWork } from "react-icons/md";
 
-import { styles } from "../../utils/styles";
+import { styles } from "../../utils/styles.js";
 
 const Services = () => {
   return (

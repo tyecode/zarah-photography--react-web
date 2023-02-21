@@ -1,10 +1,12 @@
-import { styles } from "../../utils/styles";
-import { sectionImages } from "../../utils/constants";
+import { styles } from "../../utils/styles.js";
+import { sectionImages } from "../../utils/constants.js";
 
 const History = () => {
   return (
     <section className="bg-primary w-full">
-      <div className={`${styles.flexCenter} bg-secondary w-full py-16 flex flex-col gap-16 sm:flex-row`}>
+      <div
+        className={`${styles.flexCenter} bg-secondary w-full py-16 flex flex-col gap-16 sm:flex-row`}
+      >
         <div className={`${styles.paddingX} mt-16 sm:mt-0 sm:pr-0`}>
           <div className="w-full aspect-square">
             <img

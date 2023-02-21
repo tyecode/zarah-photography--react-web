@@ -1,5 +1,5 @@
-import { styles } from "../utils/styles";
-import { footerLinks } from "../utils/constants";
+import { styles } from "../utils/styles.js";
+import { footerLinks } from "../utils/constants.js";
 
 const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import { styles } from "../utils/styles";
+import { styles } from "../utils/styles.js";
 import { Hero } from "../components";
 import {
   Services,

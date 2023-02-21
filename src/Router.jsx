@@ -10,7 +10,7 @@ import {
 
 const Router = () => (
   <Routes>
-    <Route path="/" element={<HomePage />} />
+    <Route exact path="/" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
     <Route path="/gallery" element={<PortfolioPage />} />
     <Route path="/blog" element={<BlogPage />} />
