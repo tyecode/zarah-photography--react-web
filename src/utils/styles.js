@@ -16,7 +16,7 @@ export const styles = {
     "text-white font-playfair text-[30px] md:text-[46px] font-normal py-2",
   heading3: "text-white font-playfair text-[20px] my-4",
   paragraph:
-    "text-white font-poppins font-extralight text-[12px] sm:text-[13px] md:text-[14px] leading-8 tracking-wide py-2",
+    "text-white font-poppins font-extralight text-[14px] leading-8 tracking-wide py-2",
 
   boxWidth: "xl:max-w-[1280px] w-full",
   paddingX: "px-6 sm:px-16",
@@ -36,4 +36,6 @@ export const styles = {
     "cursor-default pointer-events-none hover:outline-none hover:no-underline focus:outline-none focus:no-underline",
   carouselArrowIcon:
     "inline-block bg-no-repeat w-6 h-6 cursor-pointer pointer-events-auto",
+
+  fixedBackground: "bg-no-repeat bg-cover bg-center bg-fixed"
 };

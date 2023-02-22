@@ -6,7 +6,9 @@ import { History } from "../sections/about";
 const AboutPage = () => {
   return (
     <div className="w-full">
-      <section className="w-full h-[calc(100vh-140px)] bg-aboutSection bg-fixed flex justify-center items-center relative z-[2]">
+      <section
+        className={`${styles.flexCenter} w-full h-[calc(100vh-140px)] bg-aboutSection relative z-[2] ${styles.fixedBackground}`}
+      >
         <div className="w-full h-full absolute bg-black opacity-20 z-[-1]"></div>
         <div className="flex flex-col items-center gap-4">
           <span className={`${styles.supHeading}`}>
