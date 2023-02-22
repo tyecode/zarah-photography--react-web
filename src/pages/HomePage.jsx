@@ -15,7 +15,7 @@ const HomePage = () => {
     <div className="w-full flex flex-col">
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth} relative`}>
-          <Hero />
+          {/* <Hero /> */}
         </div>
       </div>
 
