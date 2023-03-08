@@ -4,11 +4,11 @@ import { MdOutlineCameraRoll, MdOutlineHomeWork } from "react-icons/md";
 
 import { styles } from "../../utils/styles";
 
-const Services = () => {
+const ServicesSection = () => {
   return (
-    <section className="bg-primary w-full py-16">
-      <div className={`${styles.paddingX} md:flex md:gap-16`}>
-        <div className="w-full">
+    <section className="services__section bg-primary w-full py-16">
+      <div className={`${styles.paddingX} md:flex gap-16`}>
+        <div className="w-full md:basis-1/3">
           <div className="flex items-center md:mt-8">
             <div className={styles.headingBar}></div>
             <p className={styles.supHeading}>Our Services</p>
@@ -18,8 +18,8 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between">
-          <div className="flex gap-8 sm:basis-[45%] my-4">
+        <div className="grid sm:grid-cols-2 sm:gap-x-16 md:basis-2/3">
+          <div className="flex gap-8 sm:basis-1/2 my-4">
             <i className="mt-4">
               <TfiCamera color="#fff" size={50} />
             </i>
@@ -32,7 +32,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex gap-8 sm:basis-[45%] my-4">
+          <div className="flex gap-8 sm:basis-1/2 my-4">
             <i className="mt-4">
               <MdOutlineCameraRoll color="#fff" size={50} />
             </i>
@@ -45,7 +45,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex gap-8 sm:basis-[45%] my-4">
+          <div className="flex gap-8 sm:basis-1/2 my-4">
             <i className="mt-4">
               <MdOutlineHomeWork color="#fff" size={50} />
             </i>
@@ -58,7 +58,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex gap-8 sm:basis-[45%] my-4">
+          <div className="flex gap-8 sm:basis-1/2 my-4">
             <i className="mt-4">
               <BiPhotoAlbum color="#fff" size={50} />
             </i>
@@ -76,4 +76,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;

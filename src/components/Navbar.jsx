@@ -6,20 +6,21 @@ import { navLinks } from "../utils/constants";
 import { styles } from "../utils/styles";
 
 const Navbar = () => {
-  const [hamburgerActive, setHamburgerActive] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   const [navBackground, setNavBackground] = useState("");
   const location = useLocation();
 
   useEffect(() => {
     if (location.pathname != "/") {
-      setNavBackground("bg-primary relative");
+      setNavBackground("bg-primary absolute");
     } else {
       setNavBackground("bg-transparent absolute");
     }
+    setOpen(false);
   }, [location]);
 
   return (
-    <nav className={`w-full py-5 z-[99] ${navBackground}`}>
+    <nav className={`navbar w-full py-5 z-[99] ${navBackground}`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div
           className={`${styles.boxWidth} relative sm:flex justify-between items-center`}
@@ -35,7 +36,7 @@ const Navbar = () => {
 
           <ul
             className={`${
-              hamburgerActive ? "" : "hidden"
+              isOpen ? "" : "hidden"
             } sm:flex sm:w-auto w-full text-center sm:mt-0 mt-10 sm:bg-transparent bg-overlay sm:py-0 py-2 sm:static absolute`}
           >
             {navLinks.map((nav) => (
@@ -60,9 +61,8 @@ const Navbar = () => {
               color="#fff"
               size={28}
               duration={0.6}
-              onToggle={(toggled) =>
-                toggled ? setHamburgerActive(true) : setHamburgerActive(false)
-              }
+              toggled={isOpen}
+              toggle={setOpen}
             />
           </div>
         </div>

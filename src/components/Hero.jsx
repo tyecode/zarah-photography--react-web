@@ -1,61 +1,40 @@
 import { styles } from "../utils/styles";
 import { slideImages } from "../utils/constants";
+import { register } from "swiper/element";
+
+register();
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen relative">
-      <div
-        className="carousel slide relative w-full h-full"
-        id="carouselExampleCaptions"
-        data-bs-ride="carousel"
+    <header className="hero bg-primary w-full h-screen">
+      <swiper-container
+        slides-per-view={1}
+        speed={1500}
+        loop={true}
+        autoplay-delay={5000}
       >
-        <div className="carousel-inner relative w-full h-full overflow-hidden">
-          {slideImages.map((slide, index) => (
+        {slideImages.map((slide) => (
+          <swiper-slide key={slide.id}>
             <div
-              key={slide.id}
-              className={`${
-                index == 0 ? "active" : ""
-              } carousel-item relative float-left w-full h-full`}
+              className={`w-full h-screen overflow-hidden relative ${styles.flexCenter}`}
             >
-              <div className="w-full h-full absolute bg-black opacity-40"></div>
               <img
-                className="block w-full h-full object-cover"
-                draggable="false"
                 src={slide.src}
                 alt={slide.title}
+                draggable="false"
+                className="w-full h-full object-cover"
               />
-              <div
-                className={`carousel-caption ${styles.absoluteCenter} ${styles.flexCenter} w-full`}
+              <div className="w-full h-full bg-black opacity-40 absolute top-0"></div>
+              <h1
+                className={`${styles.heading1} ${styles.paddingX} absolute xs:mx-6 sm:mx-16`}
               >
-                <h5 className={`${styles.heading1} w-full px-10 ss:px-20 sm:px-40 md:px-60`}>
-                  {slide.caption}
-                </h5>
-              </div>
+                {slide.caption}
+              </h1>
             </div>
-          ))}
-        </div>
-        <button
-          className={`carousel-control-prev ${styles.carouselArrowStyle} left-0 ${styles.carouselArrowOutline}`}
-        >
-          <span
-            className={`carousel-control-prev-icon ${styles.carouselArrowIcon}`}
-            aria-hidden="true"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          ></span>
-        </button>
-        <button
-          className={`carousel-control-next ${styles.carouselArrowStyle} right-0 ${styles.carouselArrowOutline}`}
-        >
-          <span
-            className={`carousel-control-next-icon ${styles.carouselArrowIcon}`}
-            aria-hidden="true"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          ></span>
-        </button>
-      </div>
-    </section>
+          </swiper-slide>
+        ))}
+      </swiper-container>
+    </header>
   );
 };
 

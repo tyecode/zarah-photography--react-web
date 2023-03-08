@@ -3,9 +3,9 @@ import { FaFacebookF, FaInstagram, FaDribbble } from "react-icons/fa";
 import { styles } from "../../utils/styles";
 import { ourTeams } from "../../utils/constants";
 
-const Team = () => {
+const TeamSection = () => {
   return (
-    <section className="bg-primary w-full flex py-16">
+    <section className="team__section bg-primary w-full flex py-16">
       <div
         className={`${styles.paddingX} w-full flex flex-col gap-6 md:gap-16 md:flex-row`}
       >
@@ -22,8 +22,9 @@ const Team = () => {
             <div key={index} className="group w-full cursor-pointer">
               <div className="w-full aspect-square overflow-hidden relative">
                 <img
-                  src={team.image}
+                  src={team.src}
                   alt={team.name}
+                  draggable="false"
                   className="w-full h-full object-cover"
                 />
                 <div className="w-28 h-0 absolute top-0 left-8 bg-white group-hover:h-full duration-300">
@@ -68,4 +69,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default TeamSection;

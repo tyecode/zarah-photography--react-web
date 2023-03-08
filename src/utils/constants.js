@@ -37,32 +37,69 @@ export const slideImages = [
     id: "slide2",
     title: "Slide Image 2",
     src: "https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg",
-    caption: "Inspire Your Life Style",
+    caption: "Capture your precious moments with us",
   },
   {
     id: "slide3",
     title: "Slide Image 3",
     src: "https://snapster.foxthemes.me/wp-content/uploads/2020/08/banner6.7.2.jpg",
-    caption: "A picture is worth a thousand words",
+    caption: "Let us tell your story through photos",
+  },
+  {
+    id: "slide4",
+    title: "Slide Image 4",
+    src: "https://snapster.foxthemes.me/wp-content/uploads/2020/08/banner6.7.2.jpg",
+    caption: "We create stunning photos that last forever",
+  },
+];
+
+export const clients = [
+  {
+    id: "client1",
+    name: "Aria Gregory",
+    comment:
+      "I was very impressed by zarah’s photography skills. she took amazing photos of my event that captured the mood and atmosphere perfectly.",
+    image: "clients/client-1.jpg",
+  },
+  {
+    id: "client2",
+    name: "Simon Marshall",
+    comment:
+      "The photographer was very skilled and attentive. They took beautiful photos of me and my family that we will treasure forever. He was also very flexible and accommodating to our needs.",
+    image: "clients/client-2.jpg",
+  },
+  {
+    id: "client3",
+    name: "Jakob Booker",
+    comment:
+      "The photos were amazing and exceeded my expectations. The photographer was very professional and creative. They captured every moment perfectly and made us feel at ease.",
+    image: "clients/client-3.jpg",
+  },
+  {
+    id: "client4",
+    name: "Luna Berg",
+    comment:
+      "The photographer was very talented and friendly. They took stunning photos of my products that highlighted their features and quality.",
+    image: "clients/client-4.jpg",
   },
 ];
 
 export const sectionImages = {
   works: {
     title: "Works Section Image",
-    src: "https://images.pexels.com/photos/3022134/pexels-photo-3022134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "section/home-works.jpg",
   },
   values: {
     title: "Values Section Image",
-    src: "https://images.pexels.com/photos/2942194/pexels-photo-2942194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "section/home-values.jpg",
   },
   features: {
     title: "Features Section Image",
-    src: "https://images.pexels.com/photos/3150918/pexels-photo-3150918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "section/home-features.jpg",
   },
   contact: {
     title: "Contact Section Image",
-    src: "https://images.unsplash.com/photo-1515768450795-e3c5a297e42d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    src: "section/home-contact.jpg",
   },
   history: {
     title: "History Section Image",
@@ -70,12 +107,34 @@ export const sectionImages = {
   },
 };
 
+export const worksSectionImages = [
+  {
+    id: "coffee day",
+    title: "Coffee Day",
+    src: "section/home-works-image-1.jpg",
+  },
+  {
+    id: "dark addiction",
+    title: "Dark Addiction",
+    src: "section/home-works-image-2.jpg",
+  },
+  {
+    id: "life details",
+    title: "Life Details",
+    src: "section/home-works-image-3.jpg",
+  },
+  {
+    id: "green story",
+    title: "Green Story",
+    src: "section/home-works-image-4.jpg",
+  },
+];
+
 export const ourTeams = [
   {
     name: "Lora",
     role: "Photographer",
-    image:
-      "https://images.pexels.com/photos/12189048/pexels-photo-12189048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "team/team-1.jpg",
     socialMedia: {
       facebook: "",
       instagram: "",
@@ -85,8 +144,7 @@ export const ourTeams = [
   {
     name: "Mark",
     role: "Photographer",
-    image:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    src: "team/team-2.jpg",
     socialMedia: {
       facebook: "",
       instagram: "",
@@ -96,8 +154,7 @@ export const ourTeams = [
   {
     name: "Rose",
     role: "Photographer",
-    image:
-      "https://images.unsplash.com/photo-1527736947477-2790e28f3443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80",
+    src: "team/team-3.jpg",
     socialMedia: {
       facebook: "",
       instagram: "",
@@ -131,5 +188,80 @@ export const footerLinks = [
     id: "unsplash",
     title: "Unsplash",
     link: "",
+  },
+];
+
+export const progressBar = [
+  {
+    id: "natural",
+    title: "Natural Photography",
+    progress: 92,
+  },
+  {
+    id: "wedding",
+    title: "Wedding Photography",
+    progress: 87,
+  },
+  {
+    id: "travel",
+    title: "Travel Photography",
+    progress: 72,
+  },
+];
+
+export const OurBlog = [
+  {
+    id: "blog1",
+    article: "Photography Make Up.",
+    category: "Modeling",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog2",
+    article: "How to Take Photos of Jewelry.",
+    category: "Modeling",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog3",
+    article: "How to Take Great Close-Up Shots.",
+    category: "Modeling",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog4",
+    article: "Model's Mood",
+    category: "Modeling",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog5",
+    article: "Model's Mood",
+    category: "Modeling",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog6",
+    article: "Model's Mood",
+    category: "Modeling",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+];
+
+export const ContactDetails = [
+  {
+    id: "telephone",
+    title: "Telephone",
+    detail: "(210) 495-6871",
+  },
+  {
+    id: "email",
+    title: "Email",
+    detail: "zarah.photo@email.com",
+  },
+  {
+    id: "address",
+    title: "Address",
+    detail: "2923 Thousand Oaks Dr, San Antonio, United States",
   },
 ];

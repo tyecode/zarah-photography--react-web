@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
+
 import { styles } from "../../utils/styles";
 import { sectionImages } from "../../utils/constants";
 
-const Contact = () => {
+const ContactSection = () => {
   return (
-    <section className="bg-secondary w-full flex flex-col gap-16 sm:gap-0">
+    <section className="contact__section bg-secondary w-full flex flex-col gap-16 sm:gap-0">
       <div className="flex flex-col sm:flex-row">
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden relative">
           <img
             className="w-full h-full object-cover"
             src={sectionImages.contact.src}
             alt={sectionImages.contact.title}
+            draggable="false"
           />
           <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center p-4 gap-5">
             <p className="text-white font-poppins font-light text-[12px] tracking-[.15rem] uppercase text-center">
@@ -33,17 +36,24 @@ const Contact = () => {
             <h2 className={`${styles.heading2}`}>Get In Touch</h2>
           </div>
           <p className={styles.paragraph}>
-            Bearing living moving may you're a she'd. So gathering night morning
-            creeping, tree which bring made divide. Called his very living
-            image. Moved their midst place. Stars. You're male great.
+            This is a place where you can find amazing products and services
+            that will make your life easier and happier. Whether you are looking
+            for a new gadget, a gift for someone special, or a solution to a
+            problem, we have what you need.
           </p>
-          <button type="button" className={styles.button}>
-            Contact us
-          </button>
+          <Link to="/contact">
+            <button
+              type="button"
+              title="Contact us button"
+              className={`${styles.button} hover:bg-white hover:text-primary duration-500`}
+            >
+              Contact us
+            </button>
+          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default ContactSection;

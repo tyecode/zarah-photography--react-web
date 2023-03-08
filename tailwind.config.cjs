@@ -17,11 +17,15 @@ module.exports = {
         mulish: ["Mulish", "sans-serif"],
       },
       backgroundColor: {
-        overlay: "rgba(0, 0, 0, 0.85)",
+        overlay: "rgba(0, 0, 0, 0.60)",
       },
       backgroundImage: {
-        aboutSection:
+        aboutHeader:
           "url('https://images.pexels.com/photos/2942194/pexels-photo-2942194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+        contactHeader:
+          "url(https://images.unsplash.com/photo-1515768450795-e3c5a297e42d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80)",
+        factsSection:
+          "url('https://images.pexels.com/photos/674268/pexels-photo-674268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
       },
     },
     screens: {
@@ -33,5 +37,7 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [require("tw-elements/dist/plugin")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+  ],
 };

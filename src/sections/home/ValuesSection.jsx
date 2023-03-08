@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
+
 import { styles } from "../../utils/styles";
 import { sectionImages } from "../../utils/constants";
 
-const Values = () => {
+const ValuesSection = () => {
   return (
-    <section className="bg-secondary w-full flex flex-col gap-16 sm:gap-0">
+    <section className="values__section bg-secondary w-full flex flex-col gap-16 sm:gap-0">
       <div className="flex flex-col sm:flex-row-reverse">
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden">
           <img
             className="w-full h-full object-cover"
             src={sectionImages.values.src}
             alt={sectionImages.values.title}
+            draggable="false"
           />
         </div>
         <div
@@ -25,16 +28,22 @@ const Values = () => {
             </h2>
           </div>
           <p className={`${styles.paragraph}`}>
-            A wonderful serenity has taken possession of my entire soul, like
-            these sweet mornings of spring which I enjoy with my whole heart.
+            This is a place where you can find amazing products and services
+            that will make your life easier and happier.
           </p>
-          <button type="button" className={styles.button}>
-            About us
-          </button>
+          <Link to="/about">
+            <button
+              type="button"
+              title="About us button"
+              className={`${styles.button} hover:bg-white hover:text-primary duration-500`}
+            >
+              About us
+            </button>
+          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default Values;
+export default ValuesSection;

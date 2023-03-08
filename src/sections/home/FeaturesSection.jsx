@@ -1,15 +1,16 @@
 import { styles } from "../../utils/styles";
 import { sectionImages } from "../../utils/constants";
 
-const Features = () => {
+const FeaturesSection = () => {
   return (
-    <section className="bg-secondary w-full flex flex-col gap-16 sm:gap-0">
+    <section className="features__section bg-secondary w-full flex flex-col gap-16 sm:gap-0">
       <div className="flex flex-col sm:flex-row">
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden">
           <img
             className="w-full h-full object-cover"
             src={sectionImages.features.src}
             alt={sectionImages.features.title}
+            draggable="false"
           />
         </div>
         <div
@@ -55,4 +56,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default FeaturesSection;
