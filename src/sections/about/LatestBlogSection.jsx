@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 
-import { OurBlog } from "../../utils/constants";
+import { BlogContent } from "../blog/BlogSection";
+import { BlogCard } from "../../components";
 import { styles } from "../../utils/styles";
 import { register } from "swiper/element/bundle";
 
@@ -19,7 +20,7 @@ const LatestBlogSection = () => {
   const updateDimensions = () => {
     const width = window.innerWidth;
 
-    if (width < 620) {
+    if (width < 768) {
       setBreakpoints(1);
     } else if (width < 1060) {
       setBreakpoints(2);
@@ -42,34 +43,25 @@ const LatestBlogSection = () => {
         <swiper-container
           ref={swiperElRef}
           slides-per-view={breakpoints}
-          space-between={30}
+          space-between={24}
           speed={1500}
           loop={true}
           autoplay-delay={5000}
         >
-          {OurBlog.map((blog) => (
-            <swiper-slide key={blog.id}>
-              <div className="w-full aspect-square overflow-hidden cursor-pointer relative group">
-                <img
+          {BlogContent.slice(0)
+            .reverse()
+            .slice(0, 6)
+            .map((blog) => (
+              <swiper-slide key={blog.id}>
+                <BlogCard
+                  id={blog.id}
                   src={blog.src}
-                  alt={blog.id}
-                  draggable="false"
-                  className="w-full h-full object-cover"
+                  article={blog.article}
+                  category={blog.category}
+                  content={blog.content}
                 />
-                <div className="w-full h-1/2 bg-gradient-to-t from-black absolute bottom-0 group-hover:opacity-0 opacity-70 duration-500"></div>
-                <div className="w-full absolute bottom-0 px-8">
-                  <span className={`${styles.categoryTag}`}>
-                    {blog.category}
-                  </span>
-                  <h3
-                    className={`text-white ${styles.heading3} w-full h-[4rem] line-clamp-2`}
-                  >
-                    {blog.article}
-                  </h3>
-                </div>
-              </div>
-            </swiper-slide>
-          ))}
+              </swiper-slide>
+            ))}
         </swiper-container>
       </div>
     </section>

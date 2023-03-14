@@ -5,6 +5,7 @@ import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 import ImageGallery from "./ImageGallery";
+import BlogCard from "./BlogCard";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   Footer,
   ScrollToTop,
   ImageGallery,
+  BlogCard,
 };

@@ -22,7 +22,7 @@ export const styles = {
     "text-white font-poppins font-extralight text-[14px] leading-8 tracking-wide py-2",
 
   boxWidth: "xl:max-w-[1280px] w-full",
-  paddingX: "px-6 ss:px-10 sm:px-16",
+  paddingX: "px-6 ss:px-16 lg:px-24",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
@@ -42,5 +42,5 @@ export const styles = {
 
   fixedBackground: "bg-no-repeat bg-cover bg-center bg-fixed",
   categoryTag:
-    "bg-primary text-white font-poppins uppercase font-light text-[13px] tracking-widest py-1 px-2 rounded",
+    "bg-primary text-white font-poppins uppercase font-light text-[12px] tracking-widest py-1 px-2 rounded",
 };

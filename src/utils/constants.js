@@ -111,22 +111,22 @@ export const worksSectionImages = [
   {
     id: "coffee day",
     title: "Coffee Day",
-    src: "section/home-works-image-1.jpg",
+    src: "section/home-works-coffee_day.jpg",
   },
   {
     id: "dark addiction",
     title: "Dark Addiction",
-    src: "section/home-works-image-2.jpg",
+    src: "section/home-works-dark_addiction.jpg",
   },
   {
     id: "life details",
     title: "Life Details",
-    src: "section/home-works-image-3.jpg",
+    src: "section/home-works-life_details.jpg",
   },
   {
     id: "green story",
     title: "Green Story",
-    src: "section/home-works-image-4.jpg",
+    src: "section/home-works-green_story.jpg",
   },
 ];
 
@@ -212,38 +212,76 @@ export const progressBar = [
 export const OurBlog = [
   {
     id: "blog1",
-    article: "Photography Make Up.",
-    category: "Modeling",
-    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+    article: "How to Choose the Best Camera for Your Photography Style",
+    category: "Tips/Tricks",
+    src: "blog/blog-1.jpg",
+    paragraph:
+      "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
   {
     id: "blog2",
-    article: "How to Take Photos of Jewelry.",
-    category: "Modeling",
+    article: "10 Amazing Photography Tips from Professional Photographers",
+    category: "Tips/Tricks",
     src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
   },
   {
     id: "blog3",
     article: "How to Take Great Close-Up Shots.",
-    category: "Modeling",
+    category: "Tips/Tricks",
     src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
   },
   {
     id: "blog4",
-    article: "Model's Mood",
-    category: "Modeling",
+    article: "The Ultimate Guide to Editing Your Photos with Photoshop",
+    category: "Inspiration/Trends",
     src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
   },
   {
     id: "blog5",
-    article: "Model's Mood",
-    category: "Modeling",
+    article: "5 Common Photography Mistakes and How to Avoid Them",
+    category: " Tips/Tricks",
     src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
   },
   {
     id: "blog6",
-    article: "Model's Mood",
-    category: "Modeling",
+    article: "The Best Photography Locations in the World",
+    category: "Inspiration/Trends",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog7",
+    article: "How to Capture Stunning Photos of the Night Sky",
+    category: " Tips/Tricks",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog8",
+    article: "How to Use Lightroom to Enhance Your Photos",
+    category: " Tips/Tricks",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog9",
+    article: "The Top Photography Trends for 2023",
+    category: "Inspiration/Trends",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog10",
+    article: "The Difference Between DSLR and Mirrorless Cameras",
+    category: "Tips/Tricks",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog11",
+    article: "The Best Apps for Editing Photos on Your Phone",
+    category: "Inspiration/Trends",
+    src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+  },
+  {
+    id: "blog12",
+    article: "The Benefits of Using a Tripod for Your Photography",
+    category: "Tips/Tricks",
     src: "https://images.unsplash.com/photo-1602742563993-941c7b7b3886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
   },
 ];

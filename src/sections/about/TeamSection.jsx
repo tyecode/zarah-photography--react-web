@@ -10,7 +10,7 @@ const TeamSection = () => {
           <h2 className={`${styles.heading2}`}>Professional Photographers</h2>
         </div>
 
-        <div className="w-full flex flex-col gap-6 px-0 sm:flex-row ss:px-16 sm:px-0 md:px-16 lg:px-32">
+        <div className="w-full flex flex-col gap-6 px-0 sm:flex-row ss:px-16 sm:px-0 md:px-16">
           {ourTeams.map((team, index) => (
             <div key={index} className="w-full flex flex-col">
               <div className="w-full aspect-[2/3] overflow-hidden hover:mt-[-2rem] duration-300">

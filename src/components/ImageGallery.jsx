@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 import { styles } from "../utils/styles";
 
-const ImageGallery = ({ Images }) => {
+const ImageGallery = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [lightbox, setLightbox] = useState(false);
 
@@ -20,12 +19,12 @@ const ImageGallery = ({ Images }) => {
 
   const handlePrev = () => {
     selectedImage === 0
-      ? setSelectedImage(Images.length - 1)
+      ? setSelectedImage(images.length - 1)
       : setSelectedImage(selectedImage - 1);
   };
 
   const handleNext = () => {
-    selectedImage === Images.length - 1
+    selectedImage === images.length - 1
       ? setSelectedImage(0)
       : setSelectedImage(selectedImage + 1);
   };
@@ -36,14 +35,14 @@ const ImageGallery = ({ Images }) => {
         <div
           className={`lightbox w-full h-screen flex flex-col fixed top-0 left-0 z-[100] ${styles.flexCenter} bg-overlay p-6`}
         >
-          <div className="max-w-4xl drop-shadow-xl p-2 bg-primary">
+          <div className="max-w-5xl drop-shadow-xl p-2 bg-white">
             <MdOutlineClose
               className="text-[1.8rem] text-white opacity-70 absolute -top-9 right-0 cursor-pointer"
               onClick={handleClose}
             />
             <img
-              src={Images[selectedImage].src}
-              alt={Images[selectedImage].title}
+              src={images[selectedImage].src}
+              alt={images[selectedImage].title}
               draggable={false}
               className="w-full h-full object-cover"
             />
@@ -59,7 +58,7 @@ const ImageGallery = ({ Images }) => {
         </div>
       )}
       <div className="gallery__wrapper w-full grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {Images.map((images, index) => (
+        {images.map((images, index) => (
           <div
             key={index}
             onClick={() => handleClick(index)}
