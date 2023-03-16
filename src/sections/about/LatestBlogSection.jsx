@@ -1,9 +1,8 @@
+import { styles } from "../../utils/styles";
 import { useRef, useEffect, useState } from "react";
-
+import { register } from "swiper/element/bundle";
 import { BlogContent } from "../blog/BlogSection";
 import { BlogCard } from "../../components";
-import { styles } from "../../utils/styles";
-import { register } from "swiper/element/bundle";
 
 register();
 

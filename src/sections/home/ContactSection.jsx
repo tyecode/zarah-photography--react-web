@@ -1,7 +1,10 @@
+import { styles } from "../../utils/styles";
 import { Link } from "react-router-dom";
 
-import { styles } from "../../utils/styles";
-import { sectionImages } from "../../utils/constants";
+const sectionImg = {
+  title: "Contact Section Image",
+  src: "images/home-contact.jpg",
+};
 
 const ContactSection = () => {
   return (
@@ -10,8 +13,8 @@ const ContactSection = () => {
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden relative">
           <img
             className="w-full h-full object-cover"
-            src={sectionImages.contact.src}
-            alt={sectionImages.contact.title}
+            src={sectionImg.src}
+            alt={sectionImg.title}
             draggable="false"
           />
           <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center p-4 gap-5">

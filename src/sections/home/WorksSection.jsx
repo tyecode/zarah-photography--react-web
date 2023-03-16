@@ -1,5 +1,32 @@
 import { styles } from "../../utils/styles";
-import { sectionImages, worksSectionImages } from "../../utils/constants";
+
+const sectionImg = {
+  title: "Works Section Image",
+  src: "images/home-works.jpg",
+};
+
+const images = [
+  {
+    id: "coffee day",
+    title: "Coffee Day",
+    src: "images/home-works-coffee_day.jpg",
+  },
+  {
+    id: "dark addiction",
+    title: "Dark Addiction",
+    src: "images/home-works-dark_addiction.jpg",
+  },
+  {
+    id: "life details",
+    title: "Life Details",
+    src: "images/home-works-life_details.jpg",
+  },
+  {
+    id: "green story",
+    title: "Green Story",
+    src: "images/home-works-green_story.jpg",
+  },
+];
 
 const WorksSection = () => {
   return (
@@ -8,8 +35,8 @@ const WorksSection = () => {
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden">
           <img
             className="w-full h-full object-cover"
-            src={sectionImages.works.src}
-            alt={sectionImages.works.title}
+            src={sectionImg.src}
+            alt={sectionImg.title}
             draggable="false"
           />
         </div>
@@ -34,7 +61,7 @@ const WorksSection = () => {
         </div>
       </div>
       <div className="flex flex-col ss:flex-row flex-wrap md:flex-nowrap cursor-pointer">
-        {worksSectionImages.map((img, index) => (
+        {images.map((img, index) => (
           <div
             key={index}
             className="group w-full ss:w-1/2 aspect-[4/3] relative overflow-hidden"

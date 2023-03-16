@@ -1,9 +1,8 @@
+import { styles } from "../utils/styles";
 import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { Slant as Hamburger } from "hamburger-react";
-
 import { navLinks } from "../utils/constants";
-import { styles } from "../utils/styles";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -23,31 +22,31 @@ const Navbar = () => {
     <nav className={`navbar w-full py-5 z-[99] ${navBackground}`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div
-          className={`${styles.boxWidth} relative sm:flex justify-between items-center`}
+          className={`${styles.boxWidth} relative md:flex justify-between items-center`}
         >
           <h1 className={styles.banner}>
             <Link
               to="/"
               className="hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
             >
-              <span className="text-red-500">Z</span>arah
+              <span className="text-link">Z</span>arah
             </Link>
           </h1>
 
           <ul
             className={`${
               isOpen ? "" : "hidden"
-            } sm:flex sm:w-auto w-full text-center sm:mt-0 mt-10 sm:bg-transparent bg-overlay sm:py-0 py-2 sm:static absolute`}
+            } md:flex md:w-auto w-full text-center md:mt-0 mt-10 md:bg-transparent bg-overlay md:py-0 py-2 md:static absolute`}
           >
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className={`${styles.linkStyle} sm:ml-8 sm:my-0 my-8 hover:text-red-500`}
+                className={`${styles.linkStyle} md:ml-8 md:my-0 my-9 hover:text-link`}
               >
                 <NavLink
                   to={nav.link}
                   className={({ isActive }) =>
-                    isActive ? "text-red-500 duration-300" : "duration-300"
+                    isActive ? "text-link duration-300" : "duration-300"
                   }
                 >
                   {nav.title}
@@ -56,7 +55,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="sm:hidden absolute right-0 top-0">
+          <div className="md:hidden absolute right-0 top-0">
             <Hamburger
               color="#fff"
               size={28}

@@ -1,6 +1,5 @@
-import { useRef, useEffect, useState } from "react";
-
 import { styles } from "../../utils/styles";
+import { useRef, useEffect, useState } from "react";
 import { clients } from "../../utils/constants";
 import { register } from "swiper/element";
 

@@ -1,6 +1,5 @@
-import { useState } from "react";
-
 import { styles } from "../utils/styles";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const blogMotion = {

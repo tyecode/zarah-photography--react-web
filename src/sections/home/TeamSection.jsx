@@ -1,7 +1,6 @@
-import { FaFacebookF, FaInstagram, FaDribbble } from "react-icons/fa";
-
 import { styles } from "../../utils/styles";
 import { ourTeams } from "../../utils/constants";
+import { FaFacebookF, FaInstagram, FaDribbble } from "react-icons/fa";
 
 const TeamSection = () => {
   return (
@@ -31,29 +30,26 @@ const TeamSection = () => {
                   <span className="w-full h-full flex flex-col gap-6 justify-center items-center overflow-hidden">
                     <a href={team.socialMedia.facebook}>
                       <FaFacebookF
-                        color="#333"
                         size={20}
-                        className="hover:opacity-50 duration-300"
+                        className="text-softBlack hover:text-link duration-300"
                       />
                     </a>
                     <a href={team.socialMedia.instagram}>
                       <FaInstagram
-                        color="#333"
                         size={20}
-                        className="hover:opacity-50 duration-300"
+                        className="text-softBlack hover:text-link duration-300"
                       />
                     </a>
                     <a href={team.socialMedia.dribbble}>
                       <FaDribbble
-                        color="#333"
                         size={20}
-                        className="hover:opacity-50 duration-300"
+                        className="text-softBlack hover:text-link duration-300"
                       />
                     </a>
                   </span>
                 </div>
               </div>
-              <div className="flex flex-col my-4 px-6">
+              <div className="flex flex-col my-4">
                 <h4 className="text-white font-playfair font-light text-[18px] my-1">
                   {team.name}
                 </h4>

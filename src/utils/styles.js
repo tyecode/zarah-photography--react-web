@@ -12,7 +12,7 @@ export const styles = {
     "text-white font-poppins uppercase tracking-[.2rem] text-[11px] sm:text-[12px] md:text-[13px] font-light",
 
   heading1:
-    "text-white text-[40px] sm:text-[48px] md:text-[54px] text-center font-playfair",
+    "text-white text-[42px] sm:text-[56px] md:text-[64px] text-center font-playfair",
   heading2:
     "text-white font-playfair text-[30px] md:text-[46px] font-normal py-2",
   heading3: "text-white font-playfair text-[20px] my-4",

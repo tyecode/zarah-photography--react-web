@@ -6,7 +6,7 @@ export const BlogContent = [
     id: "blog1",
     article: "How to Choose the Best Camera for Your Photography Style",
     category: "Tips/Tricks",
-    src: "blog/blog-1.jpg",
+    src: "images/blog/blog-1.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -14,7 +14,7 @@ export const BlogContent = [
     id: "blog2",
     article: "How to Take Great Close-Up Shots",
     category: "Tips/Tricks",
-    src: "blog/blog-2.jpg",
+    src: "images/blog/blog-2.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -22,7 +22,7 @@ export const BlogContent = [
     id: "blog3",
     article: "10 Amazing Photography Tips from Professional Photographers",
     category: "Tips/Tricks",
-    src: "blog/blog-3.jpg",
+    src: "images/blog/blog-3.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -30,7 +30,7 @@ export const BlogContent = [
     id: "blog4",
     article: "The Ultimate Guide to Editing Your Photos with Photoshop",
     category: "Inspiration/Trends",
-    src: "blog/blog-4.jpg",
+    src: "images/blog/blog-4.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -38,7 +38,7 @@ export const BlogContent = [
     id: "blog5",
     article: "5 Common Photography Mistakes and How to Avoid Them",
     category: " Tips/Tricks",
-    src: "blog/blog-5.jpg",
+    src: "images/blog/blog-5.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -46,7 +46,7 @@ export const BlogContent = [
     id: "blog6",
     article: "The Best Photography Locations in the World",
     category: "Inspiration/Trends",
-    src: "blog/blog-6.jpg",
+    src: "images/blog/blog-6.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -54,7 +54,7 @@ export const BlogContent = [
     id: "blog7",
     article: "How to Capture Stunning Photos of the Night Sky",
     category: " Tips/Tricks",
-    src: "blog/blog-7.jpg",
+    src: "images/blog/blog-7.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -62,7 +62,7 @@ export const BlogContent = [
     id: "blog8",
     article: "How to Use Lightroom to Enhance Your Photos",
     category: " Tips/Tricks",
-    src: "blog/blog-8.jpg",
+    src: "images/blog/blog-8.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -70,7 +70,7 @@ export const BlogContent = [
     id: "blog9",
     article: "The Top Photography Trends for 2023",
     category: "Inspiration/Trends",
-    src: "blog/blog-9.jpg",
+    src: "images/blog/blog-9.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -78,7 +78,7 @@ export const BlogContent = [
     id: "blog10",
     article: "The Difference Between DSLR and Mirrorless Cameras",
     category: "Tips/Tricks",
-    src: "blog/blog-10.jpg",
+    src: "images/blog/blog-10.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -86,7 +86,7 @@ export const BlogContent = [
     id: "blog11",
     article: "The Best Apps for Editing Photos on Your Phone",
     category: "Inspiration/Trends",
-    src: "blog/blog-11.jpg",
+    src: "images/blog/blog-11.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },
@@ -94,7 +94,7 @@ export const BlogContent = [
     id: "blog12",
     article: "The Benefits of Using a Tripod for Your Photography",
     category: "Tips/Tricks",
-    src: "blog/blog-12.jpg",
+    src: "images/blog/blog-12.jpg",
     content:
       "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
   },

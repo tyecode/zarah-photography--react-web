@@ -7,7 +7,7 @@ const BlogPage = () => {
     <div className="blog__page w-full flex flex-col">
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
-          <Header title="Our Blog" link="/blog" background="bg-contactHeader" />
+          <Header title="Our Blog" link="/blog" background="bg-blogHeader" />
         </div>
       </div>
 

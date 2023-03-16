@@ -16,3 +16,11 @@ body {
   scroll-behavior: smooth;
   user-select: none;
 }
+
+img {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: .85rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+}

@@ -1,7 +1,10 @@
+import { styles } from "../../utils/styles";
 import { Link } from "react-router-dom";
 
-import { styles } from "../../utils/styles";
-import { sectionImages } from "../../utils/constants";
+const sectionImg = {
+  title: "Values Section Image",
+  src: "images/home-values.jpg",
+};
 
 const ValuesSection = () => {
   return (
@@ -10,8 +13,8 @@ const ValuesSection = () => {
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden">
           <img
             className="w-full h-full object-cover"
-            src={sectionImages.values.src}
-            alt={sectionImages.values.title}
+            src={sectionImg.src}
+            alt={sectionImg.title}
             draggable="false"
           />
         </div>

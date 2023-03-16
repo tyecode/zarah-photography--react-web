@@ -4,35 +4,35 @@ import { ImageGallery } from "../../components";
 const Images = [
   {
     title: "Happiness",
-    src: "gallery/happiness.jpg",
+    src: "images/gallery/happiness.jpg",
   },
   {
     title: "Freedom",
-    src: "gallery/freedom.jpg",
+    src: "images/gallery/freedom.jpg",
   },
   {
     title: "Pleasure",
-    src: "gallery/pleasure.jpg",
+    src: "images/gallery/pleasure.jpg",
   },
   {
     title: "Journey",
-    src: "gallery/journey.jpg",
+    src: "images/gallery/journey.jpg",
   },
   {
     title: "Marriage",
-    src: "gallery/marriage.jpg",
+    src: "images/gallery/marriage.jpg",
   },
   {
     title: "Cerebrate",
-    src: "gallery/celebrate.jpg",
+    src: "images/gallery/celebrate.jpg",
   },
   {
     title: "Portrait",
-    src: "gallery/portrait.jpg",
+    src: "images/gallery/portrait.jpg",
   },
   {
     title: "Romance",
-    src: "gallery/romance.jpg",
+    src: "images/gallery/romance.jpg",
   },
 ];
 

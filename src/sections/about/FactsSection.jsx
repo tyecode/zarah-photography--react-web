@@ -3,7 +3,7 @@ import { styles } from "../../utils/styles";
 const FactsSection = () => {
   return (
     <section
-      className={`facts__section bg-factsSection w-full py-16 ${styles.fixedBackground} relative z-[2]`}
+      className={`facts__section bg-aboutFacts w-full py-16 ${styles.fixedBackground} relative z-[2]`}
     >
       <div className="w-full h-full absolute top-0 bg-black opacity-40 z-[-1]"></div>
       <div

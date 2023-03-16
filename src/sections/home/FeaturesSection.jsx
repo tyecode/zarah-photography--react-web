@@ -1,5 +1,9 @@
 import { styles } from "../../utils/styles";
-import { sectionImages } from "../../utils/constants";
+
+const sectionImg = {
+  title: "Features Section Image",
+  src: "images/home-features.jpg",
+};
 
 const FeaturesSection = () => {
   return (
@@ -8,8 +12,8 @@ const FeaturesSection = () => {
         <div className="w-full sm:w-1/2 aspect-[3/4] overflow-hidden">
           <img
             className="w-full h-full object-cover"
-            src={sectionImages.features.src}
-            alt={sectionImages.features.title}
+            src={sectionImg.src}
+            alt={sectionImg.title}
             draggable="false"
           />
         </div>

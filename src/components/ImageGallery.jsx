@@ -1,8 +1,10 @@
-import { useState } from "react";
-import { MdOutlineClose } from "react-icons/md";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-
 import { styles } from "../utils/styles";
+import { useState } from "react";
+import {
+  MdOutlineClose,
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 
 const ImageGallery = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -47,11 +49,11 @@ const ImageGallery = ({ images }) => {
               className="w-full h-full object-cover"
             />
           </div>
-          <FaChevronCircleLeft
+          <MdOutlineArrowBackIos
             className="text-[2rem] text-white opacity-60 absolute left-0 cursor-pointer m-10"
             onClick={handlePrev}
           />
-          <FaChevronCircleRight
+          <MdOutlineArrowForwardIos
             className="text-[2rem] text-white opacity-60 absolute right-0 cursor-pointer m-10"
             onClick={handleNext}
           />

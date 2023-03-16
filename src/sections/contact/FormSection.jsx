@@ -1,6 +1,10 @@
 import { styles } from "../../utils/styles";
-import { sectionImages } from "../../utils/constants";
 import { ContactForm } from "../../components";
+
+const sectionImg = {
+  title: "Contact Section Image",
+  src: "images/contact-form.jpg",
+};
 
 const FormSection = () => {
   return (
@@ -11,8 +15,8 @@ const FormSection = () => {
         <div className="w-full aspect-[4/3] overflow-hidden sm:basis-1/2">
           <img
             className="w-full h-full object-cover"
-            src={sectionImages.contact.src}
-            alt="..."
+            src={sectionImg.src}
+            alt={sectionImg.title}
           />
         </div>
         <div className="w-full flex flex-col gap-6 sm:basis-1/2">
