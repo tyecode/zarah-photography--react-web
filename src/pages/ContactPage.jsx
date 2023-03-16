@@ -14,7 +14,7 @@ const ContactPage = () => {
           <Header
             title="Contact Us"
             link="/contact"
-            background="bg-contactHeader"
+            background="bg-contact-header"
           />
         </div>
       </div>

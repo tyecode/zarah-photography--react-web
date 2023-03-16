@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ContactSection = () => {
   return (
     <section
-      className={`contact__section w-full bg-aboutContact ${styles.fixedBackground} py-16 md:py-32 relative z-[2]`}
+      className={`contact__section w-full bg-about-contact ${styles.fixedBackground} py-16 md:py-32 relative z-[2]`}
     >
       <div className="w-full h-full absolute top-0 bg-black opacity-30 z-[-1]"></div>
       <div

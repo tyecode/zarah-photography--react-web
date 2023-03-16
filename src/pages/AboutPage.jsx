@@ -14,7 +14,7 @@ const AboutPage = () => {
     <div className="about__page w-full flex flex-col">
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
-          <Header title="About Us" link="/about" background="bg-aboutHeader" />
+          <Header title="About Us" link="/about" background="bg-about-header" />
         </div>
       </div>
 

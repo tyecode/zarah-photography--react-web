@@ -22,12 +22,12 @@ module.exports = {
         overlay: "rgba(0, 0, 0, 0.90)",
       },
       backgroundImage: {
-        aboutHeader: "url('images/about-header.jpg')",
-        aboutFacts: "url('images/about-fact.jpg')",
-        aboutContact: "url('images/about-contact.jpg')",
-        galleryHeader: "url('images/gallery-header.jpg')",
-        blogHeader: "url('images/blog-header.jpg')",
-        contactHeader: "url('images/contact-header.jpg')",
+        "about-header": "url('/images/about-header.jpg')",
+        "about-facts": "url('/images/about-fact.jpg')",
+        "about-contact": "url('/images/about-contact.jpg')",
+        "gallery-header": "url('/images/gallery-header.jpg')",
+        "blog-header": "url('/images/blog-header.jpg')",
+        "contact-header": "url('/images/contact-header.jpg')",
       },
     },
     screens: {

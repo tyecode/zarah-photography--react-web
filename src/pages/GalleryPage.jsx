@@ -10,7 +10,7 @@ const GalleryPage = () => {
           <Header
             title="Gallery"
             link="/gallery"
-            background="bg-galleryHeader"
+            background="bg-gallery-header"
           />
         </div>
       </div>
