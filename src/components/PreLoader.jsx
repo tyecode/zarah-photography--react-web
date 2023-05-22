@@ -9,7 +9,7 @@ const Preloader = () => {
         document.querySelector("body").classList.remove("loaded");
         setTimeout(() => {
             document.querySelector("body").classList.add("loaded");
-        }, 500);
+        }, 1000);
     }, [location]);
 
     return (

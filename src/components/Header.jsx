@@ -26,7 +26,7 @@ const Header = (props) => {
           animate={controls}
           initial="hidden"
           variants={riseUpFadeIn}
-          transition={{ type: 'spring', damping: 10, duration: .5, delay: .5 }}
+          transition={{ type: 'spring', damping: 10, duration: .5, delay: 1 }}
           className={`${styles.supHeading}`}>
           <Link to="/" className="hover:opacity-70 duration-300">
             Home
@@ -41,7 +41,7 @@ const Header = (props) => {
           animate={controls}
           initial="hidden"
           variants={riseUpFadeIn}
-          transition={{ type: 'spring', damping: 10, duration: .5, delay: .8 }}
+          transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.3 }}
           className={styles.heading1}>{props.title}</motion.h1>
       </div>
     </header>
