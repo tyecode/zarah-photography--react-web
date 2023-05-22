@@ -1,24 +1,49 @@
 import { styles } from "../../utils/styles";
 import { ourTeams } from "../../utils/constants";
 import { FaFacebookF, FaInstagram, FaDribbble } from "react-icons/fa";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { leftFadeIn, riseUpFadeIn } from "../../utils/animation";
 
 const TeamSection = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section className="team__section bg-primary w-full flex py-16">
       <div
         className={`${styles.paddingX} w-full flex flex-col gap-6 md:gap-16 md:flex-row`}
       >
-        <div className="basis-full md:basis-2/6">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={leftFadeIn}
+          className="basis-full md:basis-2/6">
           <div className="flex items-center md:mt-8">
             <div className={styles.headingBar}></div>
             <p className={styles.supHeading}>Meet the team</p>
           </div>
           <h2 className={`${styles.heading2}`}>Professional Photographers</h2>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col gap-5 sm:flex-row md:mt-8">
           {ourTeams.map((team, index) => (
-            <div key={index} className="group w-full cursor-pointer">
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={riseUpFadeIn}
+              transition={{ type: 'spring', damping: 10, duration: 1, delay: 1 + (index / 3) }}
+              key={index}
+              className="group w-full cursor-pointer">
               <div className="w-full aspect-square overflow-hidden relative">
                 <img
                   src={team.src}
@@ -57,7 +82,7 @@ const TeamSection = () => {
                   {team.role}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

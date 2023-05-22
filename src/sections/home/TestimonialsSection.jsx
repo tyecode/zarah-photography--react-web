@@ -2,18 +2,29 @@ import { styles } from "../../utils/styles";
 import { useRef, useEffect, useState } from "react";
 import { clients } from "../../utils/constants";
 import { register } from "swiper/element";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { leftFadeIn, riseUpFadeIn } from "../../utils/animation";
 
 register();
 
 const TestimonialsSection = () => {
   const swiperElRef = useRef(null);
   const [breakpoints, setBreakpoints] = useState(0);
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     updateDimensions();
     window.addEventListener("resize", updateDimensions);
     swiperElRef.current.swiper.slideTo(0);
   }, []);
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   const updateDimensions = () => {
     const width = window.innerWidth;
@@ -26,13 +37,18 @@ const TestimonialsSection = () => {
       <div
         className={`${styles.paddingX} w-full flex flex-col md:flex-row gap-6`}
       >
-        <div className="w-full md:w-1/3">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={leftFadeIn}
+          className="w-full md:w-1/3">
           <div className="flex items-center md:mt-8">
             <div className={styles.headingBar}></div>
             <p className={styles.supHeading}>Testimonials</p>
           </div>
           <h2 className={`${styles.heading2}`}>Clients Say</h2>
-        </div>
+        </motion.div>
 
         <div className="w-full md:w-2/3">
           <swiper-container
@@ -43,9 +59,15 @@ const TestimonialsSection = () => {
             loop={true}
             autoplay-delay={5000}
           >
-            {clients.map((clients) => (
+            {clients.map((clients, index) => (
               <swiper-slide key={clients.id}>
-                <div className="w-full flex flex-col py-4">
+                <motion.div
+                  ref={ref}
+                  animate={controls}
+                  initial="hidden"
+                  variants={riseUpFadeIn}
+                  transition={{ type: 'spring', duration: 1, delay: .2 + (index / 2) }}
+                  className="w-full flex flex-col py-4">
                   <div className="flex flex-col relative">
                     <div className="text-white text-[40px] font-playfair leading-8 absolute top-0 left-0">
                       “
@@ -67,7 +89,7 @@ const TestimonialsSection = () => {
                     </div>
                     <h3 className={styles.heading3}>{clients.name}</h3>
                   </div>
-                </div>
+                </motion.div>
               </swiper-slide>
             ))}
           </swiper-container>

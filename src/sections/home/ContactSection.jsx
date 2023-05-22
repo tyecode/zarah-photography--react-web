@@ -1,5 +1,9 @@
 import { styles } from "../../utils/styles";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { rightFadeIn, riseUpFadeIn } from "../../utils/animation";
 
 const sectionImg = {
   title: "Contact Section Image",
@@ -7,6 +11,15 @@ const sectionImg = {
 };
 
 const ContactSection = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section className="contact__section bg-secondary w-full flex flex-col gap-16 sm:gap-0">
       <div className="flex flex-col sm:flex-row">
@@ -21,8 +34,8 @@ const ContactSection = () => {
             <p className="text-white font-poppins font-light text-[12px] tracking-[.15rem] uppercase text-center">
               Need a Lifestyle Photographer?
             </p>
-            <h2
-              className={`${styles.heading2} text-center w-full p-4 border-t-[1px] mb-0 pb-0`}
+            <div className="w-full h-[1px] bg-white"></div>
+            <h2 className={`${styles.heading2} text-center w-full p-4 mb-0 pb-0`}
             >
               Someone to Collaborate With?
             </h2>
@@ -31,28 +44,47 @@ const ContactSection = () => {
         <div
           className={`${styles.paddingX} flex flex-col py-16 sm:w-1/2 justify-center md:p-16`}
         >
-          <div className="w-full">
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={rightFadeIn}
+            className="w-full">
             <div className="flex items-center">
               <div className={styles.headingBar}></div>
               <p className={styles.supHeading}>Contact</p>
             </div>
             <h2 className={`${styles.heading2}`}>Get In Touch</h2>
-          </div>
-          <p className={styles.paragraph}>
+          </motion.div>
+          <motion.p
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={riseUpFadeIn}
+            transition={{ type: 'spring', duration: 1, delay: 1 }}
+            className={styles.paragraph}>
             This is a place where you can find amazing products and services
             that will make your life easier and happier. Whether you are looking
             for a new gadget, a gift for someone special, or a solution to a
             problem, we have what you need.
-          </p>
-          <Link to="/contact">
-            <button
-              type="button"
-              title="Contact us button"
-              className={`${styles.button} hover:bg-white hover:text-primary duration-500`}
-            >
-              Contact us
-            </button>
-          </Link>
+          </motion.p>
+          <motion.span
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={riseUpFadeIn}
+            transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.5 }}
+          >
+            <Link to="/contact">
+              <button
+                type="button"
+                title="Contact us button"
+                className={`${styles.button} hover:bg-white hover:text-primary duration-500`}
+              >
+                Contact us
+              </button>
+            </Link>
+          </motion.span>
         </div>
       </div>
     </section>

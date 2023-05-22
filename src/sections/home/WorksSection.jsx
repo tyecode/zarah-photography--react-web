@@ -1,4 +1,8 @@
 import { styles } from "../../utils/styles";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { rightFadeIn, riseUpFadeIn } from "../../utils/animation";
 
 const sectionImg = {
   title: "Works Section Image",
@@ -29,6 +33,15 @@ const images = [
 ];
 
 const WorksSection = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible")
+    }
+  }, [controls, inView]);
+
   return (
     <section className="works__section bg-secondary w-full flex flex-col gap-16 sm:gap-0">
       <div className="flex flex-col sm:flex-row">
@@ -43,21 +56,32 @@ const WorksSection = () => {
         <div
           className={`${styles.paddingX} flex flex-col py-16 sm:w-1/2 justify-center md:p-16`}
         >
-          <div className="w-full">
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={rightFadeIn}
+            className="w-full">
             <div className="flex items-center">
               <div className={styles.headingBar}></div>
               <p className={styles.supHeading}>Our Works</p>
             </div>
             <h2 className={`${styles.heading2}`}>Stand Out Your Lifestyle</h2>
-          </div>
-          <p className={`${styles.paragraph}`}>
+          </motion.div>
+          <motion.p
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={riseUpFadeIn}
+            transition={{ type: 'spring', duration: 2, delay: 1 }}
+            className={`${styles.paragraph}`}>
             We are proud to showcase some of our works that demonstrate our
             skills and expertise in various fields and industries. We have
             completed hundreds of projects for clients from different sectors
             and backgrounds, delivering high-quality results that exceed their
             expectations. Here are some examples of our works that you can
             browse and explore.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="flex flex-col ss:flex-row flex-wrap md:flex-nowrap cursor-pointer">
