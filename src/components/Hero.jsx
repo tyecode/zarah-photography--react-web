@@ -35,9 +35,10 @@ const Hero = () => {
     <header className="hero bg-primary w-full h-screen">
       <swiper-container
         slides-per-view={1}
-        speed={3000}
+        speed={1000}
         loop={true}
-        autoplay-delay={7000}
+        autoplay-delay={10000}
+
       >
         {slideImages.map((slide) => (
           <swiper-slide key={slide.id}>

@@ -10,6 +10,15 @@ const sectionImg = {
   src: "images/home-contact.jpg",
 };
 
+const scaleMotion = {
+  hidden: {
+    scaleX: 0,
+  },
+  visible: {
+    scaleX: 1,
+  }
+}
+
 const ContactSection = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -30,15 +39,34 @@ const ContactSection = () => {
             alt={sectionImg.title}
             draggable="false"
           />
-          <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center p-4 gap-5">
-            <p className="text-white font-poppins font-light text-[12px] tracking-[.15rem] uppercase text-center">
+          <div
+            className="absolute top-0 w-full h-full flex flex-col justify-center items-center p-4 gap-5">
+            <motion.p
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={riseUpFadeIn}
+              transition={{ type: 'spring', damping: 10, duration: .5, delay: .5 }}
+              className="text-white font-poppins font-light text-[12px] tracking-[.15rem] uppercase text-center">
               Need a Lifestyle Photographer?
-            </p>
-            <div className="w-full h-[1px] bg-white"></div>
-            <h2 className={`${styles.heading2} text-center w-full p-4 mb-0 pb-0`}
+            </motion.p>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={scaleMotion}
+              transition={{ duration: 1, delay: 1 }}
+              className="w-full h-[1px] bg-white"></motion.div>
+            <motion.h2
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={riseUpFadeIn}
+              transition={{ type: 'spring', damping: 10, duration: 1, delay: 1.4 }}
+              className={`${styles.heading2} text-center w-full p-4 mb-0 pb-0`}
             >
               Someone to Collaborate With?
-            </h2>
+            </motion.h2>
           </div>
         </div>
         <div
@@ -61,7 +89,7 @@ const ContactSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', duration: 1, delay: 1 }}
+            transition={{ type: 'spring', duration: 1, delay: 1.2 }}
             className={styles.paragraph}>
             This is a place where you can find amazing products and services
             that will make your life easier and happier. Whether you are looking
@@ -73,7 +101,7 @@ const ContactSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.5 }}
+            transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.7 }}
           >
             <Link to="/contact">
               <button

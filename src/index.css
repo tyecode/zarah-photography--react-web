@@ -15,6 +15,7 @@
 body {
   scroll-behavior: smooth;
   user-select: none;
+  position: relative;
 }
 
 img {
@@ -23,4 +24,25 @@ img {
   font-size: .85rem;
   font-weight: 300;
   letter-spacing: .1rem;
+}
+
+.loaded #loader {
+  visibility: hidden;
+  animation: fadeout .3s linear;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
