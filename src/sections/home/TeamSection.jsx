@@ -26,7 +26,8 @@ const TeamSection = () => {
           animate={controls}
           initial="hidden"
           variants={leftFadeIn}
-          className="basis-full md:basis-2/6">
+          className="basis-full md:basis-2/6"
+        >
           <div className="flex items-center md:mt-8">
             <div className={styles.headingBar}></div>
             <p className={styles.supHeading}>Meet the team</p>
@@ -41,15 +42,24 @@ const TeamSection = () => {
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', damping: 10, duration: 1, delay: 1 + (index / 3) }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                duration: 1,
+                delay: 1 + index / 3,
+              }}
               key={index}
-              className="group w-full cursor-pointer">
+              className="group w-full cursor-pointer"
+            >
               <div className="w-full aspect-square overflow-hidden relative">
                 <img
                   src={team.src}
                   alt={team.name}
                   draggable="false"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width="300"
+                  height="300"
                 />
                 <div className="w-28 h-0 absolute top-0 left-8 bg-white group-hover:h-full duration-300">
                   <span className="w-full h-full flex flex-col gap-6 justify-center items-center overflow-hidden">

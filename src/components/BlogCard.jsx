@@ -26,6 +26,9 @@ const BlogCard = ({ id, src, article, category, content }) => {
         alt={id}
         draggable="false"
         className="w-full h-full object-cover group-hover:scale-[1.1] duration-500"
+        loading="lazy"
+        width="600"
+        height="600"
       />
       <div className="w-full h-1/2 bg-gradient-to-t from-black absolute bottom-0 group-hover:opacity-0 opacity-80 duration-500"></div>
       <motion.div

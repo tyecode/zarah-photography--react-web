@@ -31,6 +31,9 @@ const HistorySection = () => {
               src={sectionImg.src}
               alt={sectionImg.title}
               draggable="false"
+              loading="lazy"
+              width="600"
+              height="600"
             />
           </div>
         </div>
@@ -41,7 +44,8 @@ const HistorySection = () => {
             animate={controls}
             initial="hidden"
             variants={rightFadeIn}
-            className={`w-full`}>
+            className={`w-full`}
+          >
             <p className={styles.supHeading}>Zarah Photography</p>
             <h2 className={`${styles.heading2}`}>Our History</h2>
           </motion.div>
@@ -50,8 +54,9 @@ const HistorySection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', duration: 1, delay: 1 }}
-            className={styles.paragraph}>
+            transition={{ type: "spring", duration: 1, delay: 1 }}
+            className={styles.paragraph}
+          >
             We are always looking for new ways to improve our website and our
             services. We welcome your feedback and suggestions, as they help us
             grow and evolve. We also appreciate your support and loyalty, as

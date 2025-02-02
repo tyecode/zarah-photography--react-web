@@ -16,8 +16,8 @@ const scaleMotion = {
   },
   visible: {
     scaleX: 1,
-  }
-}
+  },
+};
 
 const ContactSection = () => {
   const controls = useAnimation();
@@ -38,16 +38,24 @@ const ContactSection = () => {
             src={sectionImg.src}
             alt={sectionImg.title}
             draggable="false"
+            loading="lazy"
+            width="960"
+            height="1280"
           />
-          <div
-            className="absolute top-0 w-full h-full flex flex-col justify-center items-center p-4 gap-5">
+          <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center p-4 gap-5">
             <motion.p
               ref={ref}
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', damping: 10, duration: .5, delay: .5 }}
-              className="text-white font-poppins font-light text-[12px] tracking-[.15rem] uppercase text-center">
+              transition={{
+                type: "spring",
+                damping: 10,
+                duration: 0.5,
+                delay: 0.5,
+              }}
+              className="text-white font-poppins font-light text-[12px] tracking-[.15rem] uppercase text-center"
+            >
               Need a Lifestyle Photographer?
             </motion.p>
             <motion.div
@@ -56,13 +64,19 @@ const ContactSection = () => {
               initial="hidden"
               variants={scaleMotion}
               transition={{ duration: 1, delay: 1 }}
-              className="w-full h-[1px] bg-white"></motion.div>
+              className="w-full h-[1px] bg-white"
+            ></motion.div>
             <motion.h2
               ref={ref}
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', damping: 10, duration: 1, delay: 1.4 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                duration: 1,
+                delay: 1.4,
+              }}
               className={`${styles.heading2} text-center w-full p-4 mb-0 pb-0`}
             >
               Someone to Collaborate With?
@@ -77,7 +91,8 @@ const ContactSection = () => {
             animate={controls}
             initial="hidden"
             variants={rightFadeIn}
-            className="w-full">
+            className="w-full"
+          >
             <div className="flex items-center">
               <div className={styles.headingBar}></div>
               <p className={styles.supHeading}>Contact</p>
@@ -89,8 +104,9 @@ const ContactSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', duration: 1, delay: 1.2 }}
-            className={styles.paragraph}>
+            transition={{ type: "spring", duration: 1, delay: 1.2 }}
+            className={styles.paragraph}
+          >
             This is a place where you can find amazing products and services
             that will make your life easier and happier. Whether you are looking
             for a new gadget, a gift for someone special, or a solution to a
@@ -101,7 +117,12 @@ const ContactSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.7 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              duration: 0.5,
+              delay: 1.7,
+            }}
           >
             <Link to="/contact">
               <button

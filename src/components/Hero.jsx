@@ -38,7 +38,6 @@ const Hero = () => {
         speed={1000}
         loop={true}
         autoplay-delay={10000}
-
       >
         {slideImages.map((slide) => (
           <swiper-slide key={slide.id}>
@@ -48,8 +47,11 @@ const Hero = () => {
               <img
                 src={slide.src}
                 alt={slide.title}
-                draggable="false"
                 className="w-full h-full object-cover"
+                draggable="false"
+                loading="lazy"
+                width="1920"
+                height="1080"
               />
               <div className="w-full h-full bg-black opacity-50 absolute top-0"></div>
               <h1

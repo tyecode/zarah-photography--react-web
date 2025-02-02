@@ -38,7 +38,7 @@ const WorksSection = () => {
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible")
+      controls.start("visible");
     }
   }, [controls, inView]);
 
@@ -51,6 +51,9 @@ const WorksSection = () => {
             src={sectionImg.src}
             alt={sectionImg.title}
             draggable="false"
+            loading="lazy"
+            width="960"
+            height="1280"
           />
         </div>
         <div
@@ -61,7 +64,8 @@ const WorksSection = () => {
             animate={controls}
             initial="hidden"
             variants={rightFadeIn}
-            className="w-full">
+            className="w-full"
+          >
             <div className="flex items-center">
               <div className={styles.headingBar}></div>
               <p className={styles.supHeading}>Our Works</p>
@@ -73,8 +77,9 @@ const WorksSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', duration: 2, delay: 1 }}
-            className={`${styles.paragraph}`}>
+            transition={{ type: "spring", duration: 2, delay: 1 }}
+            className={`${styles.paragraph}`}
+          >
             We are proud to showcase some of our works that demonstrate our
             skills and expertise in various fields and industries. We have
             completed hundreds of projects for clients from different sectors
@@ -95,6 +100,9 @@ const WorksSection = () => {
               src={img.src}
               alt={img.id}
               draggable="false"
+              loading="lazy"
+              width="400"
+              height="300"
             />
             <div className="w-full h-full bg-gradient-to-t from-black absolute top-0 opacity-0 hover:opacity-100 duration-300 flex items-end">
               <span className="text-white font-playfair text-[26px] m-10">

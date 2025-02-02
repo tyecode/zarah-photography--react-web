@@ -24,8 +24,9 @@ const TeamSection = () => {
           animate={controls}
           initial="hidden"
           variants={riseUpFadeIn}
-          transition={{ type: 'spring', duration: .5, delay: .5 }}
-          className="w-full text-center">
+          transition={{ type: "spring", duration: 0.5, delay: 0.5 }}
+          className="w-full text-center"
+        >
           <p className={styles.supHeading}>Our Team</p>
           <h2 className={`${styles.heading2}`}>Professional Photographers</h2>
         </motion.div>
@@ -37,18 +38,23 @@ const TeamSection = () => {
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', duration: .5, delay: 1 + (index / 3) }}
+              transition={{
+                type: "spring",
+                duration: 0.5,
+                delay: 1 + index / 3,
+              }}
               key={index}
             >
-              <div
-                className="w-full flex flex-col gap-4 cursor-pointer hover:mt-[-2rem] duration-300 group"
-              >
+              <div className="w-full flex flex-col gap-4 cursor-pointer hover:mt-[-2rem] duration-300 group">
                 <div className="w-full aspect-[2/3] overflow-hidden relative">
                   <img
                     src={team.src}
                     alt={team.name}
                     draggable="false"
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    width="400"
+                    height="600"
                   />
 
                   <div className="w-28 h-72 absolute -top-72 left-8 bg-white group-hover:top-0 duration-300">

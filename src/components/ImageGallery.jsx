@@ -45,8 +45,11 @@ const ImageGallery = ({ images }) => {
             <img
               src={images[selectedImage].src}
               alt={images[selectedImage].title}
-              draggable={false}
               className="w-full h-full object-cover"
+              draggable="false"
+              loading="lazy"
+              width="1280"
+              height="720"
             />
           </div>
           <MdOutlineArrowBackIos
@@ -69,8 +72,11 @@ const ImageGallery = ({ images }) => {
             <img
               src={images.src}
               alt={images.title}
-              draggable={false}
               className="w-full h-full object-cover"
+              draggable="false"
+              loading="lazy"
+              width="960"
+              height="540"
             />
             <div
               className={`w-full h-full bg-primary opacity-0 group-hover:opacity-90 absolute top-0 duration-500 ${styles.flexCenter}`}

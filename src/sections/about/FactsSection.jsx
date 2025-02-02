@@ -27,8 +27,9 @@ const FactsSection = () => {
           animate={controls}
           initial="hidden"
           variants={riseUpFadeIn}
-          transition={{ type: 'spring', duration: 1, delay: .9 }}
-          className="flex flex-col text-center md:text-left">
+          transition={{ type: "spring", duration: 1, delay: 0.9 }}
+          className="flex flex-col text-center md:text-left"
+        >
           <h3 className={`${styles.heading3}`}>Projects</h3>
           <span className="text-white text-[6rem] font-playfair leading-none">
             125
@@ -39,8 +40,9 @@ const FactsSection = () => {
           animate={controls}
           initial="hidden"
           variants={riseUpFadeIn}
-          transition={{ type: 'spring', duration: 1, delay: .7 }}
-          className="flex flex-col text-center md:text-left">
+          transition={{ type: "spring", duration: 1, delay: 0.7 }}
+          className="flex flex-col text-center md:text-left"
+        >
           <h3 className={`${styles.heading3}`}>Values</h3>
           <span className={`${styles.paragraph} xs:px-12 md:px-0`}>
             We are a team of passionate and creative people who love what we do.
@@ -54,8 +56,9 @@ const FactsSection = () => {
           animate={controls}
           initial="hidden"
           variants={riseUpFadeIn}
-          transition={{ type: 'spring', duration: 1, delay: .5 }}
-          className="flex flex-col text-center md:text-left">
+          transition={{ type: "spring", duration: 1, delay: 0.5 }}
+          className="flex flex-col text-center md:text-left"
+        >
           <h3 className={`${styles.heading3}`}>Missions</h3>
           <span className={`${styles.paragraph} xs:px-12 md:px-0`}>
             We believe that everyone deserves to have access to the best things

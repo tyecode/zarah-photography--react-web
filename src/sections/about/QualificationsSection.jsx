@@ -24,7 +24,8 @@ const QualificationsSection = () => {
             animate={controls}
             initial="hidden"
             variants={leftFadeIn}
-            className="w-full">
+            className="w-full"
+          >
             <p className={styles.supHeading}>Qualifications</p>
             <h2 className={`${styles.heading2}`}>Our Proficiency</h2>
           </motion.div>
@@ -33,8 +34,9 @@ const QualificationsSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', duration: 1, delay: 1 }}
-            className={styles.paragraph}>
+            transition={{ type: "spring", duration: 1, delay: 1 }}
+            className={styles.paragraph}
+          >
             We are a team of passionate and creative people who love what we do.
             We started this website with a simple vision: to provide
             high-quality products and services that make a difference in
@@ -49,8 +51,15 @@ const QualificationsSection = () => {
                 animate={controls}
                 initial="hidden"
                 variants={riseUpFadeIn}
-                transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.5 + (index / 3) }}
-                key={progression.id} className="flex flex-col w-full gap-1">
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  duration: 0.5,
+                  delay: 1.5 + index / 3,
+                }}
+                key={progression.id}
+                className="flex flex-col w-full gap-1"
+              >
                 <h3 className={styles.heading3}>{progression.title}</h3>
                 <div className="w-full h-[4px] bg-gray-700">
                   <div

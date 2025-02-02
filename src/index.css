@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,23 +12,25 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
   user-select: none;
   position: relative;
 }
 
 img {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: .85rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .loaded #loader {
   visibility: hidden;
-  animation: fadeout .3s linear;
+  animation: fadeout 0.3s linear;
 }
 
 @keyframes fadeout {

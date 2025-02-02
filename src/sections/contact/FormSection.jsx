@@ -30,6 +30,10 @@ const FormSection = () => {
             className="w-full h-full object-cover"
             src={sectionImg.src}
             alt={sectionImg.title}
+            draggable="false"
+            loading="lazy"
+            width="1024"
+            height="768"
           />
         </div>
         <div className="w-full flex flex-col gap-6 sm:basis-1/2">
@@ -38,7 +42,8 @@ const FormSection = () => {
             animate={controls}
             initial="hidden"
             variants={rightFadeIn}
-            className="w-full">
+            className="w-full"
+          >
             <p className={styles.supHeading}>Get in touch</p>
             <h2 className={styles.heading2}>What if we collaborate?</h2>
           </motion.div>

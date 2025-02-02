@@ -25,7 +25,8 @@ const ServicesSection = () => {
           animate={controls}
           initial="hidden"
           variants={leftFadeIn}
-          className="w-full md:basis-1/3">
+          className="w-full md:basis-1/3"
+        >
           <div className="flex items-center md:mt-8">
             <div className={styles.headingBar}></div>
             <p className={styles.supHeading}>Our Services</p>
@@ -41,8 +42,14 @@ const ServicesSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: 1, delay: .8 }}
-            className="flex gap-8 sm:basis-1/2 my-4">
+            transition={{
+              type: "spring",
+              damping: 10,
+              duration: 1,
+              delay: 0.8,
+            }}
+            className="flex gap-8 sm:basis-1/2 my-4"
+          >
             <i className="mt-4">
               <TfiCamera color="#fff" size={50} />
             </i>
@@ -60,8 +67,14 @@ const ServicesSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: 1, delay: 1.3 }}
-            className="flex gap-8 sm:basis-1/2 my-4">
+            transition={{
+              type: "spring",
+              damping: 10,
+              duration: 1,
+              delay: 1.3,
+            }}
+            className="flex gap-8 sm:basis-1/2 my-4"
+          >
             <i className="mt-4">
               <MdOutlineCameraRoll color="#fff" size={50} />
             </i>
@@ -79,8 +92,14 @@ const ServicesSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: 1, delay: 1.8 }}
-            className="flex gap-8 sm:basis-1/2 my-4">
+            transition={{
+              type: "spring",
+              damping: 10,
+              duration: 1,
+              delay: 1.8,
+            }}
+            className="flex gap-8 sm:basis-1/2 my-4"
+          >
             <i className="mt-4">
               <MdOutlineHomeWork color="#fff" size={50} />
             </i>
@@ -98,8 +117,14 @@ const ServicesSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: 1, delay: 2.3 }}
-            className="flex gap-8 sm:basis-1/2 my-4">
+            transition={{
+              type: "spring",
+              damping: 10,
+              duration: 1,
+              delay: 2.3,
+            }}
+            className="flex gap-8 sm:basis-1/2 my-4"
+          >
             <i className="mt-4">
               <BiPhotoAlbum color="#fff" size={50} />
             </i>

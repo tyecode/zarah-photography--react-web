@@ -42,7 +42,8 @@ const TestimonialsSection = () => {
           animate={controls}
           initial="hidden"
           variants={leftFadeIn}
-          className="w-full md:w-1/3">
+          className="w-full md:w-1/3"
+        >
           <div className="flex items-center md:mt-8">
             <div className={styles.headingBar}></div>
             <p className={styles.supHeading}>Testimonials</p>
@@ -66,8 +67,13 @@ const TestimonialsSection = () => {
                   animate={controls}
                   initial="hidden"
                   variants={riseUpFadeIn}
-                  transition={{ type: 'spring', duration: 1, delay: .2 + (index / 2) }}
-                  className="w-full flex flex-col py-4">
+                  transition={{
+                    type: "spring",
+                    duration: 1,
+                    delay: 0.2 + index / 2,
+                  }}
+                  className="w-full flex flex-col py-4"
+                >
                   <div className="flex flex-col relative">
                     <div className="text-white text-[40px] font-playfair leading-8 absolute top-0 left-0">
                       “
@@ -85,6 +91,10 @@ const TestimonialsSection = () => {
                         src={clients.image}
                         alt={clients.name}
                         className="w-full h-full object-cover"
+                        draggable="false"
+                        loading="lazy"
+                        width="64"
+                        height="64"
                       />
                     </div>
                     <h3 className={styles.heading3}>{clients.name}</h3>

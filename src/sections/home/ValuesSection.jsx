@@ -29,6 +29,9 @@ const ValuesSection = () => {
             src={sectionImg.src}
             alt={sectionImg.title}
             draggable="false"
+            loading="lazy"
+            width="960"
+            height="1280"
           />
         </div>
         <div
@@ -39,7 +42,8 @@ const ValuesSection = () => {
             animate={controls}
             initial="hidden"
             variants={leftFadeIn}
-            className="w-full">
+            className="w-full"
+          >
             <div className="flex items-center">
               <div className={styles.headingBar}></div>
               <p className={styles.supHeading}>Our Values</p>
@@ -53,8 +57,9 @@ const ValuesSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', duration: 1, delay: 1 }}
-            className={`${styles.paragraph}`}>
+            transition={{ type: "spring", duration: 1, delay: 1 }}
+            className={`${styles.paragraph}`}
+          >
             This is a place where you can find amazing products and services
             that will make your life easier and happier.
           </motion.p>
@@ -63,7 +68,12 @@ const ValuesSection = () => {
             animate={controls}
             initial="hidden"
             variants={riseUpFadeIn}
-            transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.5 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              duration: 0.5,
+              delay: 1.5,
+            }}
           >
             <Link to="/about">
               <button

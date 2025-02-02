@@ -28,6 +28,9 @@ const FeaturesSection = () => {
             src={sectionImg.src}
             alt={sectionImg.title}
             draggable="false"
+            loading="lazy"
+            width="960"
+            height="1280"
           />
         </div>
         <div
@@ -38,7 +41,8 @@ const FeaturesSection = () => {
             animate={controls}
             initial="hidden"
             variants={rightFadeIn}
-            className="w-full">
+            className="w-full"
+          >
             <div className="flex items-center">
               <div className={styles.headingBar}></div>
               <p className={styles.supHeading}>Our Features</p>
@@ -52,8 +56,14 @@ const FeaturesSection = () => {
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', damping: 10, duration: .5, delay: 1 }}
-              className="flex max-w-[350px]">
+              transition={{
+                type: "spring",
+                damping: 10,
+                duration: 0.5,
+                delay: 1,
+              }}
+              className="flex max-w-[350px]"
+            >
               <span className="text-white font-mulish text-[42px] font-light px-6 pt-2">
                 01.
               </span>
@@ -66,8 +76,14 @@ const FeaturesSection = () => {
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.3 }}
-              className="flex max-w-[350px]">
+              transition={{
+                type: "spring",
+                damping: 10,
+                duration: 0.5,
+                delay: 1.3,
+              }}
+              className="flex max-w-[350px]"
+            >
               <span className="text-white font-mulish text-[42px] font-light px-6 pt-2">
                 02.
               </span>
@@ -80,8 +96,14 @@ const FeaturesSection = () => {
               animate={controls}
               initial="hidden"
               variants={riseUpFadeIn}
-              transition={{ type: 'spring', damping: 10, duration: .5, delay: 1.6 }}
-              className="flex max-w-[350px]">
+              transition={{
+                type: "spring",
+                damping: 10,
+                duration: 0.5,
+                delay: 1.6,
+              }}
+              className="flex max-w-[350px]"
+            >
               <span className="text-white font-mulish text-[42px] font-light px-6 pt-2">
                 03.
               </span>
